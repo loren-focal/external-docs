@@ -30,11 +30,11 @@ Confirm each rail's location and length against the site plan before you mount a
 
 ## Rail lengths
 
-| Rail | Nominal | Actual | Max heaters |
-|---|---|---|---|
-| DRL-04 | 4 ft | 53.5" | 2 |
-| DRL-06 | 6 ft | 80.5" | 3 |
-| DRL-08 | 8 ft | 98.5" | 3 |
+| Rail | Nominal | Max heaters | Max current | Plug | Receptacle |
+|---|---|---|---|---|---|
+| DRL-04 | 4 ft | 2 | 15A | NEMA 5-15P | NEMA 5-15R |
+| DRL-06 | 6 ft | 3 | 20A | NEMA 5-20P | NEMA 5-20R |
+| DRL-08 | 8 ft | 3 | 20A | NEMA 5-20P | NEMA 5-20R |
 
 Each rail has a T-slot running its full length and an 8-foot built-in power cable. Focal supplies mounting hardware, but off-the-shelf hardware works as long as it connects through the T-slot.
 

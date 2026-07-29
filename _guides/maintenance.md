@@ -27,9 +27,9 @@ Clean and inspect every 2 to 3 months, more often in dusty or heavily used spots
 
 {% include warn.html text="Disconnect power and let the heater cool completely before touching any part of it." %}
 
-{% include step.html number="1" title="Wipe the exterior" body="Use a soft, dry cloth on the outside surfaces. No harsh chemicals, abrasives, solvents, or water." diagram="maint-01-exterior.svg" %}
+{% include step.html number="1" title="Wipe the exterior" body="Use a soft, dry cloth on the outside surfaces. No harsh chemicals, abrasives, solvents, or water." %}
 
-{% include step.html number="2" title="Clear the grille" body="If dust or debris is visible inside the grille or on the reflector, gently blow it out with canned compressed air." diagram="maint-02-grille.svg" %}
+{% include step.html number="2" title="Clear the grille" body="If dust or debris is visible inside the grille or on the reflector, gently blow it out with canned compressed air." %}
 
 {% include dodont.html do="Use canned compressed air for dust inside the grille." dont="Spray water or use a pressure washer or air compressor. It damages sensitive parts." %}
 

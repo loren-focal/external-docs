@@ -26,11 +26,11 @@ For service, malfunctions, replacements, or questions, reach Focal Support.
 | Email | [hello@focalheat.co](mailto:hello@focalheat.co) |
 | Phone | 314-378-1131 |
 | Web | [focalheat.co](https://www.focalheat.co) |
-| Address | 568 Brannan St, San Francisco, CA 94107 |
+| Address | 375 Alabama St Suite 220, San Francisco, CA 94110 |
 
 ## Where to find the serial number
 
-Every support request goes faster with the serial number. It's printed on the round QR tag on the heater, and it appears on the Heater Control page when you tap that heater.
+Every support request goes faster with the serial number. It's printed on the top side of the heater, where it mounts to the rail. It also appears on the Heater Control page when you tap that heater.
 
 ## Heater specifications
 
