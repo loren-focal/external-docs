@@ -4,65 +4,58 @@ audience: [electrician]
 audience_order: {electrician: 10}
 order: 50
 summary: Circuit, outlet, and plug requirements for the electrician.
-version: "1.1"
+version: "1.2"
 updated: "2026-07-28"
 ---
 
 ## On this page
-- [Overview](#overview)
-- [System basics](#system-basics)
+- [What you need to provide](#what-you-need-to-provide)
 - [Rail configurations](#rail-configurations)
 - [Outlet and circuit by plug type](#outlet-and-circuit-by-plug-type)
-- [Notes for electricians](#notes-for-electricians)
-- [Placement](#placement)
+- [Verify at every outlet](#verify-at-every-outlet)
+- [Outlet placement](#outlet-placement)
 
-## Overview
+## What you need to provide
 
-Each Focal rail ships with a factory-installed plug — either 15A or 20A depending on how many heaters it carries. For each rail, make sure to provide a matching outdoor-rated, GFCI-protected outlet on its own dedicated circuit.
+Each Focal rail ships with a factory-installed 15A or 20A plug, depending on how many heaters it carries. Provide a matching outdoor-rated, GFCI-protected outlet on its own dedicated circuit for every rail.
+
+Each heater is rated 600W (two 300W nodes) at 120V, 60Hz. Focal heaters conform to UL 2021 and are certified by TÜV Rheinland.
+
+Also read [Safety & Clearances]({{ site.baseurl }}/safety-and-clearances/) before energizing anything.
 
 {% include dodont.html do="Give every rail its own dedicated branch circuit with a correctly sized breaker." dont="Share a circuit with other appliances or loads." %}
 
-## System basics
-
-Each Focal heater is rated 600W (two 300W nodes) at 120V, 60Hz. A rail's total load depends on how many heaters it carries.
-
-Focal heaters conform to UL 2021 and are certified by TÜV Rheinland.
-
 ## Rail configurations
 
-Each rail is limited to a maximum number of heaters. The rail model determines the plug and the circuit you need to provide.
-
-| Rail | Nominal | Actual | Max heaters | Max current | Plug | Receptacle |
-|---|---|---|---|---|---|---|
-| DRL-04 | 4 ft | 53.5" | 2 | 15A | NEMA 5-15P | NEMA 5-15R |
-| DRL-06 | 6 ft | 80.5" | 3 | 20A | NEMA 5-20P | NEMA 5-20R |
-| DRL-08 | 8 ft | 98.5" | 3 | 20A | NEMA 5-20P | NEMA 5-20R |
+| Rail | Nominal | Max heaters | Max current | Plug | Receptacle |
+|---|---|---|---|---|---|
+| DRL-04 | 4 ft | 2 | 15A | NEMA 5-15P | NEMA 5-15R |
+| DRL-06 | 6 ft | 3 | 20A | NEMA 5-20P | NEMA 5-20R |
+| DRL-08 | 8 ft | 3 | 20A | NEMA 5-20P | NEMA 5-20R |
 
 {% include warn.html text="Never load a rail with more heaters than its row allows. If more heat is needed, add another rail on its own circuit." %}
 
 ## Outlet and circuit by plug type
-
-Match the outlet and circuit to whichever plug the rail arrived with.
 
 | Factory plug | Required outlet | Required circuit |
 |---|---|---|
 | NEMA 5-15P | NEMA 5-15R, outdoor-rated, GFCI protected | Dedicated 15A circuit, appropriately sized breaker |
 | NEMA 5-20P | NEMA 5-20R, outdoor-rated, GFCI protected | Dedicated 20A circuit, appropriately sized breaker |
 
-## Notes for electricians
-
 All cabling connected to a rail should be 12AWG rated for 20A.
 
-Verify at every outlet:
+## Verify at every outlet
 
 {% include checklist.html items="Outdoor-rated receptacle with an in-use weatherproof cover | GFCI protection | Proper grounding | No exposed conductors or loose connections | Dedicated branch circuit, breaker sized to the plug" %}
 
-## Placement
+## Outlet placement
 
-Position outlets in line with the left side of each rail, where the rail's 8-foot built-in cable exits, so no extension cord is needed. Account for parklet features like pillars when siting the outlet.
+Each rail's built-in cable is 8 feet and exits the left end. Site the outlet in line with that end, within reach, so no extension cord is needed. Account for pillars and other features when siting it.
 
-{% include dodont.html do="Site the outlet in line with the left side of the rail, within reach of its 8-foot cable." dont="Site the outlet where the rail's cable can't reach without an extension cord." %}
+{% include dodont.html do="Site the outlet in line with the cord-exit end of the rail, within reach of its 8-foot cable." dont="Site the outlet where the cable can't reach without an extension cord." %}
 
 {% include warn.html text="Do not energize the outlet or operate a heater until mounting and clearance checks are complete." %}
 
 For anything not covered here, contact Focal.
+
+{% include nextlink.html slug="safety-and-clearances" title="Safety & Clearances" %}

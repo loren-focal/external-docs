@@ -3,8 +3,8 @@ title: Set Up Network
 audience: [installer]
 audience_order: {installer: 30}
 order: 20
-summary: Connect the networking box and mount the access point.
-version: "1.3"
+summary: Connect the Focal Point box and mount the access point.
+version: "1.4"
 updated: "2026-07-28"
 ---
 
@@ -16,39 +16,36 @@ updated: "2026-07-28"
 
 ## Before you start
 
-- **Consult the customer** — the Focal Point networking box connects to the internet via their existing router, so they need to point you to it and confirm which port to use
-- **Reference the site plan** — it specifies the access point location
+The Focal Point box reaches the internet through the customer's existing router, so ask them to point you to it and confirm which port to use.
 
-{% include dodont.html do="Place the access point where the site plan calls for it, with a clear path to where the rails will be mounted." dont="Tuck it behind metal, ductwork, or thick walls that block the signal." %}
+The site plan specifies the access point location. Only deviate if that spot is physically unworkable, and note the change on the plan.
+
+{% include dodont.html do="Mount the access point where the site plan calls for it, with a clear path to the rails." dont="Tuck it behind metal, ductwork, or thick walls that block the signal." %}
 
 ## What's in the kit
 
-The Focal Point networking box connects to the customer's existing router and the attached wireless access point broadcasts a dedicated 2.4GHz Wi-Fi network for the heaters.
+The Focal Point box plugs into the customer's router. The access point attached to it broadcasts a dedicated 2.4GHz Wi-Fi network for the heaters.
 
-- **Focal Point networking box** — connects to the customer's router and wireless access point
-- **Power extension cord** — for the Focal Point networking box, if the nearest outlet is out of reach
-- **Wireless access point** mounts where the site plan specifies using the included wall mount
-- **2 network cables** — one from the customer's router to the Focal Point networking box, one from the Focal Point networking box to the access point
+- **Focal Point box** and power extension cord, in case the nearest outlet is out of reach
+- **Wireless access point** and wall mount
+- **Two network cables**, one router to box, one box to access point
 
 ## Steps
 
-{% include step.html number="1" title="Connect the Focal Point networking box to the internet" body="Ask the customer to identify their router and confirm which port to use. Run one of the supplied network cables from that port to the WAN port on the Focal Point networking box." %}
+{% include step.html number="1" title="Connect the box to the internet" body="Run one network cable from the customer's router to the WAN port on the Focal Point box." %}
 
-{% include step.html number="2" title="Power the Focal Point networking box" body="Plug the Focal Point networking box into a nearby outlet, using the supplied power extension cord if the outlet is out of reach." %}
+{% include step.html number="2" title="Power the box" body="Plug the Focal Point box into a nearby outlet, using the extension cord if needed." %}
 
-{% include step.html number="3" title="Mount the access point mount" body="The site plan specifies where the access point goes and should be primary location. Mount the wall mount there and only deviate if the planned spot is physically unworkable, and note the change on the plan." %}
+{% include step.html number="3" title="Mount the access point" body="Fix the wall mount at the location on the site plan. Run the second network cable from the box to the access point, then slide the access point onto its mount." %}
 
-{% include step.html number="4" title="Attach the access point" body="Connect the second network cable to the wireless access point and the Focal Point networking box. Slide the access point onto its mount." %}
-
-{% include step.html number="5" title="Tidy up the network cable" body="Tidy up the network cable to the access point using cable clips, ties, etc" %}
+{% include step.html number="4" title="Secure the cable" body="Run the network cable neatly and secure it with clips or ties." %}
 
 ## Confirm the network is live
 
-{% include checklist.html items="Focal Point networking box is powered and connected to the customer's router | Access point is mounted at the location specified on the site plan and connected to the Focal Point networking box | Wi-Fi network 'Beam_Wifi' is being broadcasted" %}
+{% include checklist.html items="Focal Point box is powered and connected to the customer's router | Access point is mounted where the site plan specifies and connected to the box | Wi-Fi network 'Beam_Wifi' is being broadcasted" %}
 
-{% include warn.html text="If heaters won't come online once they're installed, come back and reposition the access point closer to the rails or clear obstructions before assuming a hardware fault." %}
+{% include warn.html text="If heaters won't come online later, reposition the access point closer to the rails or clear obstructions before assuming a hardware fault." %}
 
-If that doesn't resolve it, see the [Troubleshooting]({{ site.baseurl }}/troubleshooting/) guide. If you're still stuck, contact Focal.
+If that doesn't resolve it, see [Troubleshooting]({{ site.baseurl }}/troubleshooting/), then contact Focal.
 
 {% include nextlink.html slug="rail-installation" title="Install Rails" %}
-

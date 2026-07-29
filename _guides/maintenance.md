@@ -4,49 +4,41 @@ audience: [customer]
 audience_order: {customer: 30}
 order: 90
 summary: Daily checks, cleaning schedule, and when to call for service.
-version: "1.0"
-updated: "2025-11-13"
+version: "1.1"
+updated: "2026-07-28"
 ---
 
 ## On this page
-- [Daily power check for staff](#daily-power-check-for-staff)
-- [How often to clean](#how-often-to-clean)
-- [Cleaning procedure](#cleaning-procedure)
+- [Daily check for staff](#daily-check-for-staff)
+- [Cleaning](#cleaning)
 - [Damage & malfunction](#damage--malfunction)
-- [Service & support](#service--support)
 
-## Daily power check for staff
+## Daily check for staff
 
-A quick routine each shift keeps false offline reports down:
+A quick look each shift keeps false offline reports down.
 
-{% include checklist.html items="Rail switch is on | Each unit is seated in a plug point | Pull the string down once and release" %}
+{% include checklist.html items="Rail switch is on | Every unit is seated in a plug point with LEDs lit | Every heater shows online in Focal Control" %}
 
-{% include dodont.html do="Leave heaters seated overnight so they stay online." dont="Unplug heaters overnight — it causes false offline reports the next day." %}
+{% include dodont.html do="Leave heaters seated overnight so they stay online." dont="Unplug heaters overnight. It causes false offline reports the next day." %}
 
-## How often to clean
+## Cleaning
 
-Perform basic cleaning and inspection every 2 to 3 months, or more often in dusty or heavily used spots.
+Clean and inspect every 2 to 3 months, more often in dusty or heavily used spots.
 
 {% include warn.html text="Disconnect power and let the heater cool completely before touching any part of it." %}
 
-## Cleaning procedure
-
-{% include step.html number="1" title="Wipe the exterior" body="Use a soft, dry cloth on the outside surfaces. Don't use harsh chemicals, abrasives, solvents, or water on any part of the exterior." diagram="maint-01-exterior.svg" %}
+{% include step.html number="1" title="Wipe the exterior" body="Use a soft, dry cloth on the outside surfaces. No harsh chemicals, abrasives, solvents, or water." diagram="maint-01-exterior.svg" %}
 
 {% include step.html number="2" title="Clear the grille" body="If dust or debris is visible inside the grille or on the reflector, gently blow it out with canned compressed air." diagram="maint-02-grille.svg" %}
 
-{% include dodont.html do="Use canned compressed air for dust inside the grille." dont="Spray water or use a pressure washer or air compressor — it damages sensitive parts." %}
+{% include dodont.html do="Use canned compressed air for dust inside the grille." dont="Spray water or use a pressure washer or air compressor. It damages sensitive parts." %}
 
-Do not open or disassemble the heater beyond what's described here, and never spray water or cleaning liquid into the grille or onto heating components.
+Don't open or disassemble the heater beyond this, and never spray water or cleaning liquid into the grille or onto heating components.
 
 ## Damage & malfunction
 
-Immediately discontinue use and contact Focal Support if the heater shows any of these:
+Stop using the heater and contact Focal Support at hello@focalheat.co if you see physical damage, a burned or frayed cord or plug, unusual odors or sounds, or a heater that won't turn on. The full list is in [Safety & Clearances]({{ site.baseurl }}/safety-and-clearances/#when-to-stop-and-call-focal).
 
-{% include checklist.html items="Physical damage to the housing or grille | Burned, frayed, or damaged power cord or plug | Unusual odors or sounds during operation | Heater won't turn on or respond to controls | Any other visible or suspected electrical or heating damage" %}
+{% include warn.html text="Do not operate a heater that shows any sign of damage. Doing so may cause an electrical hazard or fire." %}
 
-{% include warn.html text="Do not operate a heater that shows any sign of damage. Doing so may result in electrical hazards or fire." %}
-
-## Service & support
-
-The heater has no user-serviceable parts. All service beyond basic cleaning must be done by Focal-authorized personnel. To report a malfunction, contact Focal Support at hello@focalheat.co.
+The heater has no user-serviceable parts. All service beyond basic cleaning must be done by Focal-authorized personnel.
