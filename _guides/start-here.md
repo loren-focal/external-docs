@@ -22,7 +22,7 @@ Prefer a hard copy? The printable packet has everything in one place.
 
 Focal sends a site plan for every job. It specifies rail locations and lengths, the access point location, and the zone layout. Work from it, and note any change you have to make.
 
-{% include checklist.html items="Site plan on hand | Mounting surface can support 300 lb | A dedicated GFCI outlet installed on the cord-exit side of each rail | Rail and heater counts match the site plan | Focal Point box and access point on hand | Focal Control link and password from Focal | A phone with a camera and internet" %}
+{% include checklist.html items="Site plan on hand | Rail and heater counts match the site plan | Focal Point box and access point on hand | Focal Control link and password from Focal | A phone with a camera and internet | Mounting surface can support 300 lb | A dedicated GFCI outlet installed on the cord-exit side of each rail " %}
 
 {% include warn.html text="Do not power on any rail until mounting is complete and clearances are verified." %}
 
