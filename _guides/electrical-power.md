@@ -27,11 +27,7 @@ Also read [Safety & Clearances]({{ site.baseurl }}/safety-and-clearances/) befor
 
 ## Rail configurations
 
-| Rail | Nominal | Max heaters | Max current | Plug | Receptacle |
-|---|---|---|---|---|---|
-| DRL-04 | 4 ft | 2 | 15A | NEMA 5-15P | NEMA 5-15R |
-| DRL-06 | 6 ft | 3 | 20A | NEMA 5-20P | NEMA 5-20R |
-| DRL-08 | 8 ft | 3 | 20A | NEMA 5-20P | NEMA 5-20R |
+{% include railtable.html %}
 
 {% include warn.html text="Never load a rail with more heaters than its row allows. If more heat is needed, add another rail on its own circuit." %}
 
