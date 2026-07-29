@@ -48,13 +48,13 @@ Focal heaters are rated for indoor and covered outdoor use. Install only where t
 
 Every install must meet these distances, measured from the heater and rail to the nearest surface.
 
-| Reference | Label | Minimum distance |
+| Reference | Dimension | Minimum distance |
 |---|---|---|
-| Ceiling, above rail | DIM A | 0 in (0 cm) |
-| Wall, side of rail | DIM B | 20 in (51 cm) |
-| Objects under the heater | DIM C | 36 in (91 cm) |
-| Floor to bottom of rail | DIM D | 84 in (213 cm). Use 90 in (229 cm) where people walk under |
-| Wall to the downward-facing side of the heater | DIM E | 20 in (51 cm) |
+| Ceiling, above rail | A | 0 in (0 cm) |
+| Wall, side of rail | B | 20 in (51 cm) |
+| Objects under the heater | C | 36 in (91 cm) |
+| Floor to bottom of rail | D | 84 in (213 cm). Use 90 in (229 cm) where people walk under |
+| Wall to the downward-facing side of the heater | E | 20 in (51 cm) |
 
 A heater node is 8 in in diameter on each side of the rail. Two rails mounted end to end need at least 4 in between them.
 
