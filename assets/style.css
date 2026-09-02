@@ -229,6 +229,8 @@ a { color: inherit; }
 /* the "On this page" heading + its list, hidden in the packet to avoid dead links */
 .packet-guide h2#on-this-page,
 .packet-guide h2#on-this-page + ul { display: none; }
+/* every section is already on the page, so the per-step "Next" CTA is dead weight here */
+.packet-guide .next-link { display: none; }
 .packet-end { margin: 30px 0 60px; color: var(--ink-soft); font-size: 14px; }
 
 @media print {
