@@ -5,9 +5,10 @@ description: Installation and usage guides for Focal patio heaters.
 # build absolute links. Update this if the production domain changes.
 url: "https://support.focalheat.co"
 
-# GitHub Pages serves from a subpath like /repo-name/. Empty because the
-# custom domain serves from the root.
-baseurl: ""
+# This repo serves from GitHub Pages at /external-docs/ (loren-focal.github.io),
+# used for testing/staging. The production repo (BeamT/external-docs, served at
+# support.focalheat.co) sets this differently — don't copy this value over.
+baseurl: "/external-docs"
 
 collections:
   guides:
