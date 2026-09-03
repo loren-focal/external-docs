@@ -136,16 +136,12 @@ def render_markdown_preserving_html(body):
 FEEDBACK_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSeRpO6MOve96TcSFl6TOZL383j3cJ6oyqnPy2VG5joxngoFhg/viewform?usp=pp_url"
 
 def apply_guide_layout(fm, content_html):
-    badges = "".join(
-        f'<span class="badge">{"Restaurant" if a == "customer" else a.capitalize()}</span>'
-        for a in fm.get("audience", [])
-    )
     fb = (f'{FEEDBACK_FORM}&amp;entry.262754240={quote(fm.get("title",""))}'
           f'&amp;entry.130157017={quote("/" + fm.get("_slug","") + "/")}')
     return f'''<article class="doc">
   <a href="{BASEURL}/" class="crumb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>All guides</a>
   <div class="doc-head"><h1>{html.escape(fm.get("title",""))}</h1>
-  <div class="doc-meta">{badges}<span>v{fm.get("version","")}</span><span>Updated {fm.get("updated","")}</span></div>
+  <div class="doc-meta"><span>v{fm.get("version","")}</span><span>Updated {fm.get("updated","")}</span></div>
   <p class="print-only-url">https://support.focalheat.co/{fm.get("_slug","")}/</p></div>
   <div class="doc-body">{content_html}</div>
   <div class="doc-footer no-print"><p class="feedback">Something wrong, unclear or missing on this page? <a href="{fb}" target="_blank" rel="noopener">Provide feedback</a></p><button class="print-btn" onclick="window.print()">Print or save as PDF</button></div>
@@ -210,16 +206,28 @@ def build():
 
     build_packet(out, guides)
 
+    # standalone pages: their own full HTML doc (no layout), just strip
+    # frontmatter and substitute the one Liquid variable they use.
+    for name, slug in [("fixit.html", "fixit")]:
+        src = os.path.join(ROOT, name)
+        if not os.path.exists(src):
+            continue
+        _, body = parse_frontmatter(open(src).read())
+        body = body.replace("{{ site.baseurl }}", BASEURL)
+        pdir = os.path.join(out, slug)
+        os.makedirs(pdir, exist_ok=True)
+        open(os.path.join(pdir, "index.html"), "w").write(body)
+
     guides.sort(key=lambda g: int(g.get("order", "99")))
     cards = ""
     for g in guides:
-        badges = "".join(f'<span class="badge">{a.capitalize()}</span>' for a in g.get("audience", []))
-        cards += f'''<a class="card" href="{BASEURL}/{g["_slug"]}/" data-audience="{','.join(g.get("audience",[]))}" data-title="{html.escape(g.get("title","").lower())}" data-summary="{html.escape(g.get("summary","").lower())}"><h2>{html.escape(g.get("title",""))}</h2><p>{html.escape(g.get("summary",""))}</p><div class="badges">{badges}</div></a>'''
+        cards += f'''<a class="card" href="{BASEURL}/{g["_slug"]}/" data-audience="{','.join(g.get("audience",[]))}" data-title="{html.escape(g.get("title","").lower())}" data-summary="{html.escape(g.get("summary","").lower())}"><h2>{html.escape(g.get("title",""))}</h2><p>{html.escape(g.get("summary",""))}</p></a>'''
     home_inner = open(os.path.join(ROOT, "index.html")).read()
     home_inner = re.split(r"^---.*?---\s*", home_inner, maxsplit=1, flags=re.S)[-1]
     # strip the liquid card loop, inject rendered cards
     home_inner = re.sub(r'<div class="card-list" id="card-list">.*?</div>\s*<p class="empty"',
                         f'<div class="card-list" id="card-list">{cards}</div>\n<p class="empty"', home_inner, flags=re.S)
+    home_inner = home_inner.replace("{{ site.baseurl }}", BASEURL)
     open(os.path.join(out, "index.html"), "w").write(page_shell("Focal Duo guides", home_inner, is_home=True))
     print("Preview built to", out)
     print("Guides:", ", ".join(g["_slug"] for g in guides))
